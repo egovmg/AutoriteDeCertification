@@ -12,7 +12,7 @@ EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6
 
 # Instructions
 
-1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.10 sur ce même dossier (jboss-eap-7.0.0.zip et ejbca_ce_6_15_2_6.zip )
+1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip et ejbca_ce_6_15_2_6.zip )
 
 2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( ubuntu-bionic.sh).
 

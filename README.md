@@ -12,9 +12,12 @@ EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6
 
 # Instructions
 
-1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip et ejbca_ce_6_15_2_6.zip )
+1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip ,  ejbca_ce_6_15_2_6.zip et installation.sh )
 
-2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( ubuntu-bionic.sh).
+2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( installation.sh).
+  $mkdir opt
+  opt/$ chmod +x installation.sh
+  opt/$ ./installation.sh
 
 3- Modifier la variable 'ca.dn' dans /opt/ejbca/conf/install.properties. Il s’agit du nom de l’autorité de certification administrative créée par défaut et n’a aucun lien avec le certificat racine que nous créerons ultérieurement.
 
@@ -22,7 +25,7 @@ EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6
 
 5- Modifier le fichier /opt/ejbca/conf/web.properties, n’oubliez pas de prendre note du nom de domaine et des informations d’identification de configuration HTTPS : httpsserver.password, httpsserver.dn, httpsserver.hostname, java.trustpassword.
 
-6- Entrez le dossier '/opt/scripts' et modifiez le fichier conf-jboss05.cli, assurez-vous d’utiliser les valeurs de l’étape précédente.
+6- Entrez le dossier '/opt/scripts' et modifiez le fichier conf-jboss05.cli, assurez-vous d’utiliser les valeurs de l’étape précédente .
 
 7- Entrez le dossier '/opt/scripts', ouvrez le fichier commands-jboss.txt. Exécutez ces commandes une par une, vous devez vous assurer que JBoss traite chaque commande avec succès une par une. À la fin assurez-vous de copier et d’installer le certificat superadmin sur la machine que vous voulez (ce certificat se trouve dans ejbca/p12/superadmin.p12).
 

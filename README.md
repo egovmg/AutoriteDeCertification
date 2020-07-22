@@ -30,7 +30,7 @@ EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6
 
 6- Entrez le dossier '/opt/scripts' et modifiez le fichier conf-jboss05.cli, assurez-vous d’utiliser les valeurs de l’étape précédente .
 
-7- Entrez le dossier '/opt/scripts', ouvrez le fichier commands-jboss.txt. Exécutez ces commandes une par une, vous devez vous assurer que JBoss traite chaque commande avec succès une par une. À la fin assurez-vous de copier et d’installer le certificat superadmin sur la machine que vous voulez (ce certificat se trouve dans ejbca/p12/superadmin.p12).
+7- Entrez le dossier '/opt/scripts', ouvrez le fichier commandes-jboss.txt. Exécutez ces commandes une par une, vous devez vous assurer que JBoss traite chaque commande avec succès une par une. À la fin assurez-vous de copier et d’installer le certificat superadmin sur la machine que vous voulez (ce certificat se trouve dans ejbca/p12/superadmin.p12).
 
 8- L’interface de publication sera disponible à l’adresse http://[ip server]:8080/ejbca et http://[ip server]:4447/ejbca.
 

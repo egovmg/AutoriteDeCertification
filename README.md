@@ -87,7 +87,7 @@ Après le redémarrage du service NGINX, nous pourrons interroger le service OCS
 
          openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -url http://localhost/ocsp  
 
-# Service d'Horodatage ou TimeStamp Autority
+# Service d'Horodatage ou Time Stamp Autority (TSA)
 
 Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qui inclut le service d’horodatage, les instructions d’installation sont disponibles dans ce référentiel.
 

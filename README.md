@@ -34,10 +34,10 @@ EJBCA CE 6.10
 
 Ces profils définissent les caractéristiques techniques des certificats. En plus des profils que EJBCA installe par défaut, le fichier profiles-cert.zip contient des profils de certificats pouvant être utilisés comme référence. Pour les utiliser dans la page Administration, sélectionnez « Fonctions de l’autorité de certification », « Profils de certificat », « Sélectionner un fichier », « Importer à partir du fichier Zip ». Une fois les certificats importés, utilisez l’option « Autorités de certificats » pour créer un ca racine et deux autorités de certification subordonnées comme indiqué dans le diagramme suivant.
 
-         RootCA
-     ------ | --------
-     |               |             
-   SubCAPersonne   SubCAServices
+             RootCA
+          ------ | --------
+          |               |             
+      SubCAPersonne   SubCAServices
 
 
 Consultez enfin les profils que vous avez importés, assurez-vous qu’ils utilisent les CA que vous venez de créer et effectuez les ajustements que vous jugez nécessaires.

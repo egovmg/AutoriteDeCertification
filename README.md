@@ -13,7 +13,7 @@ OpenJDK 8
 
 # Instructions
 
-1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip ,  ejbca_ce_6_15_2_6.zip et installation.sh )
+1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss EAP 7 et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip ,  ejbca_ce_6_15_2_6.zip et installation.sh )
 
 2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( installation.sh).
   

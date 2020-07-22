@@ -5,7 +5,9 @@ Ce sont les instructions pour l’installation d’un PKI, l’Autorité des cer
 # Préréquis
 
 OpenJDK 8
+
 JBoss EAP 7.0
+
 EJBCA CE 6.10
 
 # Instructions
@@ -33,9 +35,10 @@ EJBCA CE 6.10
 Ces profils définissent les caractéristiques techniques des certificats. En plus des profils que EJBCA installe par défaut, le fichier profiles-cert.zip contient des profils de certificats pouvant être utilisés comme référence. Pour les utiliser dans la page Administration, sélectionnez « Fonctions de l’autorité de certification », « Profils de certificat », « Sélectionner un fichier », « Importer à partir du fichier Zip ». Une fois les certificats importés, utilisez l’option « Autorités de certificats » pour créer un ca racine et deux autorités de certification subordonnées comme indiqué dans le diagramme suivant.
 
          RootCA
-    ------ | --------
-    |               |
-SubCAPersonne     SubCAServices
+     ------ | --------
+     |               |             
+   SubCAPersonne   SubCAServices
+
 
 Consultez enfin les profils que vous avez importés, assurez-vous qu’ils utilisent les CA que vous venez de créer et effectuez les ajustements que vous jugez nécessaires.
 
@@ -87,5 +90,5 @@ openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -u
 
 Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qui inclut le service d’horodatage, les instructions d’installation sont disponibles dans ce référentiel.
 
-Licence
+# Licence
 Ce travail est couvert dans le cadre de la stratégie de développement des services de gouvernance électronique du Gouvernement salvadorien et, à ce titre, est un travail de valeur publique soumis aux lignes directrices de la Politique sur les données ouvertes et de la licence CC-BY-SA.

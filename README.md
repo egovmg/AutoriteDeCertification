@@ -77,7 +77,7 @@ Ensuite, nous allons créer une URL de requête OCSP plus conviviale. Pour cela,
 
          apt-get install nginx-light
 
-Modifiez les paramètres dans /etc/nginx/sites/activé/par défaut, puis ajoutez le bloc suivant :
+Modifiez les paramètres dans /etc/nginx/sites/sites-available/default, puis ajoutez le bloc suivant :
 
        location /ocsp {
           proxy_pass http://localhost:8080/ejbca/publicweb/status/ocsp;

@@ -77,7 +77,7 @@ Activer le service OCSP : à partir de ' Liaisons de clés internes' -> 'OcspKey
 
 Pour tester le service, vous pouvez utiliser OpenSSL et les certificats de l’autorité de certification :
 
-         openssl ocsp -req_text -issuer subCA.pem -CAfile CARaiz.pem -cert entidad.pem  -url http://localhost:8080/ejbca/publicweb/status/ocsp  
+         openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -url http://localhost:8080/ejbca/publicweb/status/ocsp  
 # URL de requête OCSP
 Ensuite, nous allons créer une URL de requête OCSP plus conviviale. Pour cela, nous allons utiliser NGINX comme un proxy inverse.
 

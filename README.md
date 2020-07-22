@@ -8,7 +8,7 @@ OpenJDK 8
 
 JBoss EAP 7.0
 
-EJBCA CE 6.10
+EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6/
 
 # Instructions
 

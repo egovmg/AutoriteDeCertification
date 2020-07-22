@@ -95,7 +95,7 @@ Après le redémarrage du service NGINX, nous pourrons interroger le service OCS
 
 # Service d'Horodatage ou Time Stamp Autority (TSA)
 
-Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qui inclut le service d’horodatage, les instructions d’installation sont disponibles dans ce référentiel.
+Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qui inclut le service d’horodatage, les instructions d’installation sont disponibles dans ce lien (A faire).
 
 # Licence
 Ce travail est couvert dans le cadre de la stratégie de développement des services de gouvernance électronique du Gouvernement Malagasy et, à ce titre, est un travail de valeur publique soumis aux lignes directrices de la Politique sur les données ouvertes et de la licence CC-BY-SA.

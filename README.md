@@ -15,9 +15,12 @@ EJBCA CE 6.15 https://sourceforge.net/projects/ejbca/files/ejbca6/ejbca_6_15_2_6
 1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.15 sur ce même dossier (jboss-eap-7.0.0.zip ,  ejbca_ce_6_15_2_6.zip et installation.sh )
 
 2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( installation.sh).
+  
   $mkdir opt
+  
   opt/$ chmod +x installation.sh
-  opt/$ ./installation.sh
+ 
+ opt/$ ./installation.sh
 
 3- Modifier la variable 'ca.dn' dans /opt/ejbca/conf/install.properties. Il s’agit du nom de l’autorité de certification administrative créée par défaut et n’a aucun lien avec le certificat racine que nous créerons ultérieurement.
 

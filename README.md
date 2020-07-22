@@ -2,13 +2,13 @@
 Installation d’un PKI (EJBCA)
 Ce sont les instructions pour l’installation d’un PKI, l’Autorité des certificats et ses services associés, à l’aide du logiciel gratuit EJBCA. Les instructions peuvent être suivies à l’aide d’Ubuntu Server 18.04 LTS . L’EJBCA est la mise en œuvre de référence d’un PKI qui offre un grand nombre de services associés à la signature électronique.
 
-#Préréquis
+# Préréquis
 
 OpenJDK 8
 JBoss EAP 7.0
 EJBCA CE 6.10
 
-#Instructions
+# Instructions
 
 1- Téléchargez ce référentiel et enregistrez-le sur votre serveur à l’intérieur du dossier /opt. Assurez-vous de télécharger et d’ajouter le serveur JBoss dans et EJBCA CE 6.10 sur ce même dossier (jboss-eap-7.0.0.zip et ejbca_ce_6_15_2_6.zip )
 
@@ -28,25 +28,24 @@ EJBCA CE 6.10
 
 9- Pour les machines dont le certificat ' superadmin' est installé, la page d’administration sera disponible à l’adresse https://[ip server]:8443/ejbca/adminweb/.
 
-#Profils de certificats (Pas encore terminés)
+# Profils de certificats (Pas encore terminés)
 
 Ces profils définissent les caractéristiques techniques des certificats. En plus des profils que EJBCA installe par défaut, le fichier profiles-cert.zip contient des profils de certificats pouvant être utilisés comme référence. Pour les utiliser dans la page Administration, sélectionnez « Fonctions de l’autorité de certification », « Profils de certificat », « Sélectionner un fichier », « Importer à partir du fichier Zip ». Une fois les certificats importés, utilisez l’option « Autorités de certificats » pour créer un ca racine et deux autorités de certification subordonnées comme indiqué dans le diagramme suivant.
 
          RootCA
     ------ | --------
     |               |
-
 SubCAPersonne     SubCAServices
 
 Consultez enfin les profils que vous avez importés, assurez-vous qu’ils utilisent les CA que vous venez de créer et effectuez les ajustements que vous jugez nécessaires.
 
-#Profils d’entités (pas encore terminés)
+# Profils d’entités (pas encore terminés)
 
 Ces profils définissent le contenu des certificats pour les utilisateurs ou les entités finales. Le fichier profiles-enti.zip contient des profils d’entités pouvant être utilisés comme référence. Pour les utiliser dans la page Administration, sélectionnez 'Fonctions RA', 'Profils d’entité de fin', 'Sélectionner le fichier', 'Importer à partir du fichier Zip'.
 
 Enfin, examinez les profils importés, assurez-vous qu’ils utilisent les profils de certificats installés à l’étape précédente et effectuez les ajustements que vous jugez nécessaires. Vous pouvez ajouter des utilisateurs à partir de l’option 'Ajouter une entité de fin'. Chaque entité est un nouvel utilisateur qui pourra se connecter à partir du site Web public http://localhost:8080/ejbca et obtenir son certificat.
 
-#OCSP Service Configuration
+# Configuration de service OCSP 
 
 Le service OCSP permet à un utilisateur ou à une application de valider l’état (révoqué, actif, expiré, etc.) d’un certificat auprès de l’Autorité des certificats correspondante en temps réel.
 
@@ -84,7 +83,7 @@ Après le redémarrage du service NGINX, nous pourrons interroger le service OCS
 
 openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -url http://localhost/ocsp  
 
-#TSA Service d'Horodatage
+# Service d'Horodatage ou TimeStamp Autority
 
 Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qui inclut le service d’horodatage, les instructions d’installation sont disponibles dans ce référentiel.
 

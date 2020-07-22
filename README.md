@@ -71,11 +71,12 @@ Activer le service OCSP : à partir de ' Liaisons de clés internes' -> 'OcspKey
 
 Pour tester le service, vous pouvez utiliser OpenSSL et les certificats de l’autorité de certification :
 
-openssl ocsp -req_text -issuer subCA.pem -CAfile CARaiz.pem -cert entidad.pem  -url http://localhost:8080/ejbca/publicweb/status/ocsp  
-URL de requête OCSP
+         openssl ocsp -req_text -issuer subCA.pem -CAfile CARaiz.pem -cert entidad.pem  -url http://localhost:8080/ejbca/publicweb/status/ocsp  
+# URL de requête OCSP
 Ensuite, nous allons créer une URL de requête OCSP plus conviviale. Pour cela, nous allons utiliser NGINX comme un proxy inverse.
 
-apt-get install nginx-light
+         apt-get install nginx-light
+
 Modifiez les paramètres dans /etc/nginx/sites/activé/par défaut, puis ajoutez le bloc suivant :
 
        location /ocsp {
@@ -84,7 +85,7 @@ Modifiez les paramètres dans /etc/nginx/sites/activé/par défaut, puis ajoutez
         }
 Après le redémarrage du service NGINX, nous pourrons interroger le service OCSP à l’aide de la nouvelle URL :
 
-openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -url http://localhost/ocsp  
+         openssl ocsp -req_text -issuer subCA.pem -CAfile RootCA.pem -cert entite.pem  -url http://localhost/ocsp  
 
 # Service d'Horodatage ou TimeStamp Autority
 

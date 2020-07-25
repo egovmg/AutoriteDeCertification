@@ -5,9 +5,9 @@
     apt-get -y install  openjdk-8-jre-headless ca-certificates-java;
     apt-get -y install openjdk-8-jdk unzip ntp ant ant-optional postgresql postgresql-client;    
     mkdir -p  /etc/jboss; cd /opt/;
-    unzip -q /opt/ejbca_ce_6_15_2_6.zip;
+    unzip -q /opt/ejbca_ce_6_10_1_2.zip;
     unzip -q /opt/jboss-eap-7.0.0.zip;
-    mv /opt/ejbca_ce_6_15_2_6 /opt/ejbca;
+    mv /opt/ejbca_ce_6_10_1_2 /opt/ejbca;
     mv /opt/jboss-eap-7.0 /opt/jboss;
     mv /opt/configurer-jboss /opt/scripts; 
     cp /opt/scripts/ejbca/* /opt/ejbca/conf/;

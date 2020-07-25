@@ -12,7 +12,7 @@
     mv /opt/jboss-eap-7.0 /opt/jboss;
     mv /opt/configurer-jboss /opt/scripts; 
     rm -f /opt/ejbca/modules/cesecore-p11/src/sun/security/pkcs11/CESeCoreUtils.java
-    
+    cp /opt/scripts/CESeCoreUtils.java /opt/ejbca/modules/cesecore-p11/src/sun/security/pkcs11/
     cp /opt/scripts/ejbca/* /opt/ejbca/conf/;
     cp /opt/scripts/jboss.conf /etc/jboss/;
     cp /opt/scripts/jboss.service /etc/systemd/system/;

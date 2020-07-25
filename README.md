@@ -17,11 +17,11 @@ OpenJDK 8
 
 2- Préparez votre serveur en exécutant vos commandes système d’exploitation ( installation.sh).
   
-  $mkdir opt
+  $cd AutoriteDeCertification
   
-  opt/$ chmod +x installation.sh
+  AutoriteDeCertification/$ chmod +x installation.sh
  
- opt/$ ./installation.sh
+ AutoriteDeCertification/$ ./installation.sh
 
 3- Modifier la variable 'ca.dn' dans /opt/ejbca/conf/install.properties. Il s’agit du nom de l’autorité de certification administrative créée par défaut et n’a aucun lien avec le certificat racine que nous créerons ultérieurement.
 

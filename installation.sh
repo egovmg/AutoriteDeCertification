@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
     timedatectl set-timezone Africa/Nairobi;
     hostnamectl set-hostname ejbca; 
+    sudo cp -rf configurer-jboss/ /opt/
     apt-get update ;
     apt-get -y install  openjdk-8-jre-headless ca-certificates-java;
     apt-get -y install openjdk-8-jdk unzip ntp ant ant-optional postgresql postgresql-client;    

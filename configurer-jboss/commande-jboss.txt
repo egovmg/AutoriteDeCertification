@@ -1,11 +1,10 @@
-#Revisar que JBOSS termina de procesar cada comando, abrir dos consolas de comandos:
-
-#Consola 1
-#Pare verificar ejecución de comandos
+#Vérifiez que JBOSS termine le traitement de chaque commande, ouvrez deux consoles de commande:
+#Console 1
+#Arrêter de vérifier l'exécution de la commande
 tail -f /opt/jboss/standalone/log/server.log
 
-#Consola 2
-#INSTALAR APLICACION
+#Console 2
+#INSTALLER APPLICATION
 sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --file=/opt/scripts/conf-jboss01.cli;
 sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --command=:reload;
 sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --file=/opt/scripts/conf-jboss02.cli;
@@ -28,8 +27,8 @@ sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --command=:reload;
 sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --file=/opt/scripts/conf-jboss07.cli;
 sudo -u jboss /opt/jboss/bin/jboss-cli.sh --connect --command=":shutdown(restart=true)";
 
-##ABRIR NAVEGADOR 
-#copiar certificado de identidad electronica desde /opt/ejbca/p12/superamin.p12
-#importarlo en el navegador de la maquina autorizadas a administrar el sistema.
-# La contraseña para importar el certificado por defecto es 'ejbca'.
+##Ouvrir application 
+#copier le certificat d'identité électronique de /opt/ejbca/p12/superamin.p12
+#importez-le dans le navigateur de la machine autorisée à administrer le système.
+# Le mot de passe pour importer le certificat par défaut est  'egovmgkidona'.
 #http://1.2.3.4:8080/ejbca

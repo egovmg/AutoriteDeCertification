@@ -100,3 +100,4 @@ Les mêmes créateurs EJBCA offrent un serveur de signature haute performance qu
 
 # Licence
 Ce travail est couvert dans le cadre de la stratégie de développement des services de gouvernance électronique du Gouvernement Malagasy et, à ce titre, est un travail de valeur publique soumis aux lignes directrices de la Politique sur les données ouvertes et de la licence CC-BY-SA.
+

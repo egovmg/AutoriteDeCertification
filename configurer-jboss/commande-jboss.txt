@@ -1,6 +1,6 @@
 #Vérifiez que JBOSS termine le traitement de chaque commande, ouvrez deux consoles de commande:
 #Console 1
-#Arrêter de vérifier l'exécution de la commande
+# Faut pas arrêter de vérifier l'exécution de la commande
 tail -f /opt/jboss/standalone/log/server.log
 
 #Console 2
